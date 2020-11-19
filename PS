@@ -1,0 +1,18 @@
+
+#문제: https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m / Array의 곱중 가장 큰것을 return 해라
+#algorhythm: array의 요소 * 요소 + 1 을 하여 큰 수는 max_num 에 넣었다 
+
+
+
+
+
+def adjacentElementsProduct(inputArray):
+    answer = 0
+    max_num = -1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    for i in range(len(inputArray) - 1):
+        if inputArray[i] * inputArray[i+1] > max_num:
+            max_num = inputArray[i] * inputArray[i+1]
+            print(max_num, i)
+        print(i)
+    return max_num
+        
