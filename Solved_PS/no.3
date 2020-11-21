@@ -1,0 +1,29 @@
+#https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3
+#무식해보여도
+#이방법이 최고일떄가 있지요
+
+def solution(answers):
+    answer = answers
+    fst = [1,2,3,4,5] * 2000
+    snd = [2,1,2,3,2,4,2,5] * 1250
+    trd = [3,3,1,1,2,2,4,4,5,5] * 1000
+    ans = [0,0,0]
+    
+    for i in range(len(answers)):
+        if fst[i] == answer[i]:
+            ans[0] += 1
+        if snd[i] == answer[i]:
+            ans[1] += 1
+        if trd[i] == answer[i]:
+            ans[2] += 1
+    max_var = max(ans)
+    answer = []
+    for i in range(len(ans)):
+        if ans[i] == max_var:
+            answer.append(i+1)
+            
+                
+
+    
+    
+    return answer
