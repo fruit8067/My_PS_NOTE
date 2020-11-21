@@ -1,0 +1,20 @@
+#https://app.codesignal.com/arcade/intro/level-2/yuGuHvcCaFCKk56rJ/solutions
+#제귀적으로 풀려고 했는데 n 이 9999인 것이 있었음 그래서 while 문으로 대채함
+#구현문제여서 푸는데 애먹진 않음
+
+
+
+def shapeArea(n):
+    longestlength = n + (n - 1)
+    answer = solution(longestlength)
+    return answer + (answer - longestlength)
+
+
+def solution(n):
+  ans = 0
+  while True:
+      if n <= 1:
+          return ans + 1
+      ans += n
+      n -= 2
+  
