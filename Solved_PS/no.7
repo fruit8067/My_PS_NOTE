@@ -1,0 +1,14 @@
+#EZ
+#https://programmers.co.kr/learn/courses/30/lessons/12922?language=python3
+
+
+def solution(n):
+    answer = []
+    pettern = ['수','박']
+    for i in range(1,n+1):
+        if i % 2 == 0:
+            answer.append(pettern[1])
+        else:
+            answer.append(pettern[0])
+    
+    return ''.join(answer)
