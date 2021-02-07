@@ -1,3 +1,8 @@
+"""
+내 나름대로 MBTI 를 만들어 보았다
+ㅋㅋ루삥뽕
+"""
+
 def chat_clean():
   print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
